@@ -2,7 +2,7 @@
 const express = require("express");
 require("dotenv").config();
 const app = express();
-const configs = require("./config/config");
+const configs = require("./config/routes");
 // const nodeMailer=require('nodemailer');
 const bodyParser = require("body-parser");
 // app.use(bodyParser.json());
