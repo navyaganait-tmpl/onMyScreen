@@ -29,9 +29,8 @@ module.exports = {
             port: 465,
             secure: true,
             auth: {
-              type: "login",
-              user: process.env.EMAIL_USER,
-              pass: process.env.EMAIL_PASS,
+              user: "navyaganait15@gmail.com",
+              pass: "hqdgcvgctkhaicjv",
             }
           });
 
@@ -47,7 +46,7 @@ module.exports = {
           console.log(transporter);
           // send mail with defined transport object
           let info = await transporter.sendMail({
-            from: '"Divanshu Zinta" <divansh271@gmail.com>',
+            from: '"navya ganait" <navyaganait15@gmail.com>',
             to: req.body.email,
             subject: "Thanking Mail for subscribing my website",
             text: "hello?",

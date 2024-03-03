@@ -37,9 +37,8 @@ module.exports = {
             port: 465,
             secure: true, // true for 465, false for other ports
             auth: {
-              type:"login",
-              user: process.env.EMAIL_USER , // generated ethereal user
-              pass: process.env.EMAIL_PASS , // generated ethereal password
+              user: "navyaganait15@gmail.com",
+              pass: "hqdgcvgctkhaicjv",
             }
           });
         
@@ -59,7 +58,7 @@ module.exports = {
           console.log(transporter);
           // send mail with defined transport object
           let info = await transporter.sendMail({
-            from: '"Divanshu Zinta" <divansh271@gmail.com>', // sender address
+            from: '"Navya" <navyaganait15@gmail.com>', // sender address
             to: req.body.email,
             subject: "Thanking Mail for visting my website", // Subject line
             text: "hello?", // plain text body
